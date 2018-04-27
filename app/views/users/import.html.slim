@@ -1,0 +1,3 @@
+= form_tag read_csv_users_path,multipart: true do
+  = file_field_tag :csv,required: true
+  = submit_tag "Upload"

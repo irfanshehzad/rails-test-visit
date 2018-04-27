@@ -1,0 +1,16 @@
+table#records 
+  thead
+    tr
+      th name
+      th date
+      th number
+      th description
+  tbody
+    - @users.each do |user|
+      tr
+        th= user.name
+        th= user.date
+        th= user.number
+        th= user.description    
+
+= link_to "Import CSV" , import_users_path        

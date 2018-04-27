@@ -3,23 +3,18 @@
 This README would normally document whatever steps are necessary to get the
 application up and running.
 
-Things you may want to cover:
+Following ruby version and database are used in this test:
 
-* Ruby version
+* Ruby version 2.2.5 is used
 
-* System dependencies
+* Postgress Database is used
 
-* Configuration
+* For users filteration following datatables plugin is used https://github.com/mkhairi/jquery-datatables
 
-* Database creation
+* Rspecs are implemented to run tests first following commands
 
-* Database initialization
+* rake db:create RAILS_ENV=test
 
-* How to run the test suite
+* rake db:migrate RAILS_ENV=test
 
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
-# rails-test-visit
+* rspec spec/models/user_spec.rb
